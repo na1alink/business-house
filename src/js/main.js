@@ -1,5 +1,10 @@
 import "../assets/scss/main.scss";
 
+import "./gsap/gsap.min.js";
+import "./gsap/ScrollTrigger.min.js";
+import "./gsap/main-gsap.js";
+import "./common.js";
+
 var header_nav = document.querySelector(".header__main");
 var header_offset = document.querySelector(".header__top").offsetHeight;
 

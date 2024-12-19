@@ -1,21 +1,15 @@
 /* Base */
-@import "./base/reset";
-@import "./base/vars";
-@import "./base/base";
-@import "./base/containers";
+@use "./base/reset";
+@use "./base/base";
+@use "./base/containers";
 
-/* Blocks */
-@import "./blocks/header";
-@import "./blocks/nav";
-@import "./blocks/burger";
-@import "./blocks/home";
-@import "./blocks/advantages";
-@import "./blocks/services";
-@import "./blocks/stages";
-@import "./blocks/about";
-@import "./blocks/faq";
-@import "./blocks/contacts";
-@import "./blocks/application";
-@import "./blocks/footer";
-@import "./blocks/modals";
-@import "./blocks/menu";
+/* utils */
+@use "utils/fonts";
+@use "utils/vars" as *;
+@use "utils/mixins";
+
+/* layout */
+@use "./layout/all" as layout;
+
+/* components */
+@use "./components/all" as components;

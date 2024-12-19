@@ -1,0 +1,25 @@
+@use "sass:string";
+
+@mixin responsive-font-size($breakpoints) {
+  @each $breakpoint, $size in $breakpoints {
+    @if $breakpoint == "small" {
+      @media (max-width: 767px) {
+        html {
+          font-size: string.unquote("calc(100vw / #{$size})");
+        }
+      }
+    } @else if $breakpoint == "medium" {
+      @media (min-width: 768px) and (max-width: 1200px) {
+        html {
+          font-size: string.unquote("calc(100vw / #{$size})");
+        }
+      }
+    } @else if $breakpoint == "large" {
+      @media (min-width: 1201px) {
+        html {
+          font-size: string.unquote("calc(100vw / #{$size})");
+        }
+      }
+    }
+  }
+}

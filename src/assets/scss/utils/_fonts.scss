@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "ZT Neue Ralewe";
+  src: local("ZTNeueRalewe-Italic"),
+    url("../fonts/ZTNeueRalewe-Italic.woff2") format("woff2"),
+    url("../fonts/ZTNeueRalewe-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: Italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZT Neue Ralewe";
+  src: local("ZTNeueRalewe-MediumItalic"),
+    url("../fonts/ZTNeueRalewe-MediumItalic.woff2") format("woff2"),
+    url("../fonts/ZTNeueRalewe-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZT Neue Ralewe";
+  src: local("ZTNeueRalewe-Regular"),
+    url("../fonts/ZTNeueRalewe-Regular.woff2") format("woff2"),
+    url("../fonts/ZTNeueRalewe-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
