@@ -1,0 +1,146 @@
+.menu {
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  position: fixed;
+
+  background: var(--white);
+
+  transition: all 0.3s ease-in-out;
+
+  display: flex;
+
+  padding: 16rem;
+  flex-direction: column;
+  clip-path: inset(0 0 0 100%);
+
+  z-index: 55;
+
+  &.active {
+    clip-path: inset(0 0 0 0);
+  }
+  &__nav {
+    margin-bottom: 24rem;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 24rem;
+
+    img {
+      width: 120rem;
+
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__btn {
+    flex-shrink: 0;
+
+    svg {
+      width: 20rem;
+      height: 18rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+    height: fit-content;
+  }
+  &__item {
+    &-tel {
+      margin-top: auto;
+      border-top: 1rem solid var(--accent);
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+
+    color: var(--black);
+    font-size: 14rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    transition: 0.3s ease;
+
+    &:hover {
+      color: var(--primary-hover);
+    }
+    &:focus {
+      color: var(--primary-focus);
+      outline: 1rem solid var(--primary-focus);
+      outline-offset: 2rem;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+
+    &-title {
+      color: var(--black);
+      font-family: var(--third-family);
+      font-size: 20rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16rem;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8rem;
+
+      &__title {
+        color: var(--gray-5);
+
+        font-size: 14rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%; /* 18.2px */
+      }
+      &__tel {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+      }
+      &__text {
+        color: var(--black);
+
+        font-size: 14rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 18.2px */
+      }
+
+      a {
+        transition: 0.3s ease;
+        &:hover {
+          color: var(--primary-hover);
+        }
+        &:focus {
+          color: var(--primary-focus);
+          outline: 1rem solid var(--primary-focus);
+          outline-offset: 2rem;
+        }
+      }
+    }
+  }
+}

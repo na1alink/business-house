@@ -1,0 +1,130 @@
+.advantages {
+  &__title {
+    &::before,
+    &::after {
+      width: 185rem;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    height: 283rem;
+    padding: 40rem 30rem;
+
+    border-radius: 16rem;
+    background: var(--gray-2);
+    transition: background 0.6s ease-in-out;
+
+    &-step {
+      color: var(--primary);
+
+      font-size: 36rem;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 130%; /* 46.8px */
+      letter-spacing: 1.8rem;
+      text-transform: uppercase;
+
+      margin-bottom: 30rem;
+      // opacity: 0;
+    }
+
+    &-title {
+      font-family: var(--second-family);
+      font-size: 24rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.2rem;
+      text-transform: uppercase;
+      margin-bottom: 10rem;
+
+      transition: color 0.6s ease-in-out;
+      // opacity: 0;
+    }
+
+    &-descr {
+      color: var(--gray-4);
+
+      font-size: 20rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 130%; /* 26px */
+      // opacity: 0;
+    }
+
+    &:hover {
+      background: var(--white);
+      cursor: pointer;
+      box-shadow: 0rem 0rem 18rem 0rem rgba(255, 255, 255, 0.31);
+    }
+
+    &:hover &-title {
+      color: var(--black);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .advantages {
+    &__title {
+      &::before,
+      &::after {
+        width: 130rem;
+      }
+    }
+
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__card {
+      height: 240rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    &__title {
+      &::before,
+      &::after {
+        width: 32rem;
+      }
+    }
+    &__content {
+      grid-template-columns: auto;
+      gap: 16rem;
+    }
+
+    &__card {
+      padding: 20rem;
+      height: auto;
+
+      border-radius: 10rem;
+
+      &-step {
+        font-size: 24rem;
+        letter-spacing: 1.2rem;
+
+        margin-bottom: 15rem;
+      }
+
+      &-title {
+        font-size: 20rem;
+        letter-spacing: 1rem;
+        margin-bottom: 5rem;
+      }
+
+      &-descr {
+        font-size: 14rem;
+      }
+    }
+  }
+}

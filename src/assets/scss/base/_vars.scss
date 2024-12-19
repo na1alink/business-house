@@ -1,0 +1,38 @@
+:root {
+  --container-width: 1920rem;
+  --container-padding: 150rem;
+
+  --font-family: "Commissioner", sans-serif;
+  --second-family: "Cormorant Infant", sans-serif;
+  --third-family: "ZT Neue Ralewe", sans-serif;
+  --font3: "Open Sans", sans-serif;
+  --font4: "Manrope", sans-serif;
+
+  --black: #14171c;
+  --primary: #cfa56f;
+  --primary-hover: #e1c38d;
+  --primary-focus: #bb915b;
+  --primary-disabled: #939393;
+  --white: #ffffff;
+  --medium-gray: #c8cbd0;
+  --dark-gray: #82858a;
+  --gray-1: #8d8d8d;
+  --gray-2: #21262d;
+  --gray-3: #939393;
+  --gray-4: #a1a1a1;
+  --gray-5: #6e7176;
+
+  --error: #b01c25;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --container-padding: 60rem;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --container-padding: 16rem;
+  }
+}

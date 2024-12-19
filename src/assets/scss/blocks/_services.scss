@@ -1,0 +1,141 @@
+.services {
+  &__title {
+    &::before,
+    &::after {
+      width: 362rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+
+    margin-bottom: 40rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    &-img {
+      margin-bottom: 30rem;
+
+      height: 282rem;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 16rem;
+        object-fit: cover;
+      }
+    }
+
+    &-title {
+      font-family: var(--second-family);
+      font-size: 32rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.6rem;
+      text-transform: uppercase;
+      margin-bottom: 20rem;
+
+      span {
+        color: var(--primary);
+      }
+    }
+
+    &-descr {
+      color: var(--medium-gray);
+
+      font-size: 20rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 130%; /* 26px */
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+
+    &-btn {
+      max-width: 300rem;
+      width: 100%;
+    }
+  }
+}
+
+.services__card-3 .services__card-img img {
+  object-position: 0rem -130rem;
+}
+
+@media (max-width: 1200px) {
+  .services {
+    &__title {
+      &::before,
+      &::after {
+        width: 220rem;
+      }
+    }
+
+    &__card {
+      &-img {
+        height: 215rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    &__title {
+      &::before,
+      &::after {
+        width: 25rem;
+      }
+    }
+
+    &__content {
+      grid-template-columns: auto;
+      gap: 24rem;
+
+      margin-bottom: 32rem;
+    }
+
+    &__card {
+      &-img {
+        height: 175rem;
+        margin-bottom: 16rem;
+        img {
+          border-radius: 8rem;
+        }
+      }
+
+      &-title {
+        font-size: 20rem;
+
+        letter-spacing: 1rem;
+        margin-bottom: 4rem;
+      }
+
+      &-descr {
+        font-size: 14rem;
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: center;
+
+      &-btn {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .services__card-3 .services__card-img img {
+    object-position: 0rem -83rem;
+  }
+}
