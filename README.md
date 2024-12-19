@@ -1,5 +1,5 @@
 # Описание
-Лендинг для Агенства недвижимости «Деловой дом»
+Лендинг для Агенства недвижимости «Деловой дом» 
 
 ## Технологии
 1. Vite: Иинструмент для настройки среды разработки и сборки проекта
@@ -14,7 +14,7 @@
 
 `https://github.com/na1alink/business-house`
 
-2. Переход в директорию test-task
+2. Переход в директорию business-house
 
 `cd business-house`
 
@@ -34,3 +34,13 @@
 
 ### `npm run preview`
 Запускает локальный сервер для предпросмотра собранного приложения
+
+
+
+## Деплой на GitHub Pages
+
+Для автоматического деплоя проекта на GitHub Pages используется GitHub Actions. После каждого пуша в ветку `main`, GitHub Actions автоматически собирает проект и публикует его на GitHub Pages.
+
+[![GitHub Actions Status](https://github.com/na1alink/business-house/actions/workflows/deploy.yml/badge.svg)](https://github.com/na1alink/business-house/actions)
+
+Проект доступен по ссылке: [https://na1alink.github.io/business-house](https://na1alink.github.io/business-house)
